@@ -27,13 +27,12 @@ public class Diana {
             }
             if(counter >= 3) {
                 System.out.println("Reached max attempts!");
-                System.exit(0);
+
             }
-
-        } while(!isValid);
-
+        } while(!isValid && counter <3 );
 
     }
+
 
 
 
