@@ -9,12 +9,12 @@ public class Diana {
         System.out.println("Username: ");
         String username = readValueFromConsole();
         System.out.println("Welcome " + username + "!");
-        System.out.println("Password:");
 
         String password = "12345";
         int counter = 0;
         boolean isValid;
         do {
+            System.out.println("Password:");
             String userPassword = readValueFromConsole();
             counter ++;
 
@@ -22,16 +22,14 @@ public class Diana {
             if(isValid) {
                 System.out.println("You have access!");
                 System.out.println("Ai gasit comoara! Din " + counter + " incercari!");
-                System.exit(0);
             } else {
                 System.out.println("ACCESS DENIED! Attempts " + counter + ".");
-
             }
             if(counter >= 3) {
                 System.out.println("Reached max attempts!");
                 System.exit(0);
             }
-            System.out.println("Password:");
+
         } while(!isValid);
 
 
